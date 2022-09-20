@@ -27,3 +27,8 @@ model.fit(X, y)
 # Make a prediction for Cyprus
 X_new = [[22587]]  # Cyprus's GDP per capita
 print(model.predict(X_new)) # outputs [[ 5.96242338]]
+
+## K nearest
+import sklearn.neighbors
+model = sklearn.neighbors.KNeighborsRegressor(
+    n_neighbors=3)
